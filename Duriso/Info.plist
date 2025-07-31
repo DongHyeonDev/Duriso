@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AED_API_KEY</key>
-	<string>$(AED_API_KEY)</string>
+	<key>CFBundleName</key>
+	<string>$(APP_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(APP_BUNDLE_ID)</string>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>ko</string>
 	</array>
+	<key>AED_API_KEY</key>
+	<string>$(AED_API_KEY)</string>
 	<key>DISASTER_API_KEY</key>
 	<string>$(DISASTER_API_KEY)</string>
 	<key>KAKAO_DEV_API_KEY</key>
