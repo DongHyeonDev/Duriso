@@ -2,7 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,xcode,swift
 
 ### API Key ###
-Secrets.xcconfig
+Production.xcconfig
+Development.xcconfig
 
 ### FireBase ###
 GoogleService-Info.plist
