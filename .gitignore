@@ -6,7 +6,8 @@ Production.xcconfig
 Development.xcconfig
 
 ### FireBase ###
-GoogleService-Info.plist
+GoogleService-Info-Release.plist
+GoogleService-Info-Dev.plist
 
 ### macOS ###
 # General
