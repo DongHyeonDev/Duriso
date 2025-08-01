@@ -1173,7 +1173,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9D590D92E3B4E28005FFF7F /* Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1217,7 +1217,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9D590D92E3B4E28005FFF7F /* Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1327,7 +1327,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7676228B2C85E6710075B09E /* Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1430,7 +1430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7676228B2C85E6710075B09E /* Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
