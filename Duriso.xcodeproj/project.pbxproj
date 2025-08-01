@@ -54,7 +54,7 @@
 		7622D0822C7C6C5500B1AEB2 /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61B612A2C7C582800C5E69D /* NotoSansKR-Bold.ttf */; };
 		7622D0832C7C6C5500B1AEB2 /* NotoSansKR-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61B612C2C7C582800C5E69D /* NotoSansKR-Light.ttf */; };
 		7622D0842C7C6C5500B1AEB2 /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61B612B2C7C582800C5E69D /* NotoSansKR-Regular.ttf */; };
-		7622D08A2C7EB32900B1AEB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7622D0892C7EB32900B1AEB2 /* GoogleService-Info.plist */; };
+		7622D08A2C7EB32900B1AEB2 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7622D0892C7EB32900B1AEB2 /* GoogleService-Info-Release.plist */; };
 		763C0A302C7B125C006BC4E7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 763C0A2F2C7B125C006BC4E7 /* Base */; };
 		763C0A382C7B17AE006BC4E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 763C0A372C7B17AE006BC4E7 /* README.md */; };
 		763C0A3A2C7B180A006BC4E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 763C0A392C7B180A006BC4E7 /* .gitignore */; };
@@ -116,6 +116,7 @@
 		76EFE8BA2C8F20BC0077D75B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFE8B92C8F20BC0077D75B /* SignUpViewModel.swift */; };
 		76EFE8BD2C8F3CBB0077D75B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76EFE8BC2C8F3CBB0077D75B /* IQKeyboardManagerSwift */; };
 		76EFE8CE2C904D0B0077D75B /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFE8CD2C904D0B0077D75B /* OfflineViewController.swift */; };
+		C9D5FB6B2E3CE49E00C1E4BD /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9D5FB6A2E3CE49E00C1E4BD /* GoogleService-Info-Dev.plist */; };
 		D60A81652C9CF49F00589AD3 /* AedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A81642C9CF49F00589AD3 /* AedDataManager.swift */; };
 		D61268992C8A81D50031114E /* PoiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61268982C8A81D50031114E /* PoiViewModel.swift */; };
 		D61268A52C8A82060031114E /* OnlineMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D612689E2C8A82050031114E /* OnlineMapModel.swift */; };
@@ -198,7 +199,7 @@
 		7622D0752C7C21C700B1AEB2 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		7622D0772C7C21D100B1AEB2 /* GuidelineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineModel.swift; sourceTree = "<group>"; };
 		7622D0792C7C21DA00B1AEB2 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
-		7622D0892C7EB32900B1AEB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Duriso/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7622D0892C7EB32900B1AEB2 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Release.plist"; path = "Duriso/GoogleService-Info-Release.plist"; sourceTree = SOURCE_ROOT; };
 		763C0A202C7B125B006BC4E7 /* Duriso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duriso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763C0A232C7B125B006BC4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		763C0A2F2C7B125C006BC4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -253,6 +254,7 @@
 		76EFE8B92C8F20BC0077D75B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		76EFE8CD2C904D0B0077D75B /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 		C9D590D92E3B4E28005FFF7F /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = Duriso/Development.xcconfig; sourceTree = SOURCE_ROOT; };
+		C9D5FB6A2E3CE49E00C1E4BD /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Dev.plist"; path = "Duriso/GoogleService-Info-Dev.plist"; sourceTree = SOURCE_ROOT; };
 		D60A81642C9CF49F00589AD3 /* AedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AedDataManager.swift; sourceTree = "<group>"; };
 		D61268982C8A81D50031114E /* PoiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoiViewModel.swift; sourceTree = "<group>"; };
 		D612689E2C8A82050031114E /* OnlineMapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineMapModel.swift; sourceTree = "<group>"; };
@@ -659,7 +661,8 @@
 				763C0A312C7B125C006BC4E7 /* Info.plist */,
 				7676228B2C85E6710075B09E /* Production.xcconfig */,
 				C9D590D92E3B4E28005FFF7F /* Development.xcconfig */,
-				7622D0892C7EB32900B1AEB2 /* GoogleService-Info.plist */,
+				7622D0892C7EB32900B1AEB2 /* GoogleService-Info-Release.plist */,
+				C9D5FB6A2E3CE49E00C1E4BD /* GoogleService-Info-Dev.plist */,
 			);
 			path = Duriso;
 			sourceTree = "<group>";
@@ -804,6 +807,7 @@
 			buildPhases = (
 				763C0A1C2C7B125B006BC4E7 /* Sources */,
 				763C0A1D2C7B125B006BC4E7 /* Frameworks */,
+				C9D5FB672E3CD7FE00C1E4BD /* Setup Firebase Environment GoogleService-Info.plist */,
 				763C0A1E2C7B125B006BC4E7 /* Resources */,
 			);
 			buildRules = (
@@ -905,17 +909,39 @@
 				D6C5F2B82CB24EBD00D65E9D /* Assets.xcassets in Resources */,
 				7622D0832C7C6C5500B1AEB2 /* NotoSansKR-Light.ttf in Resources */,
 				7622D0842C7C6C5500B1AEB2 /* NotoSansKR-Regular.ttf in Resources */,
-				7622D08A2C7EB32900B1AEB2 /* GoogleService-Info.plist in Resources */,
+				7622D08A2C7EB32900B1AEB2 /* GoogleService-Info-Release.plist in Resources */,
 				76DFBBDD2C9DABF300C676CF /* api.txt in Resources */,
 				763C0A3A2C7B180A006BC4E7 /* .gitignore in Resources */,
 				763C0A382C7B17AE006BC4E7 /* README.md in Resources */,
 				7622D0342C7C045300B1AEB2 /* CodeConvention.md in Resources */,
+				C9D5FB6B2E3CE49E00C1E4BD /* GoogleService-Info-Dev.plist in Resources */,
 				7622D0362C7C049A00B1AEB2 /* CommitConvention.md in Resources */,
 				763C0A302C7B125C006BC4E7 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9D5FB672E3CD7FE00C1E4BD /* Setup Firebase Environment GoogleService-Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase Environment GoogleService-Info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\nprintf \"Creating Release Configuration\";\ncp \"$PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \nprintf \"Creating Dev Configuration\";\ncp \"$PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		763C0A1C2C7B125B006BC4E7 /* Sources */ = {
@@ -1182,6 +1208,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Duriso/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
@@ -1226,6 +1253,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Duriso/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
@@ -1336,6 +1364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Duriso/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
@@ -1439,6 +1468,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Duriso/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
