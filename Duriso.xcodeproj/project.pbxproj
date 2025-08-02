@@ -939,7 +939,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\nprintf \"Creating Release Configuration\";\ncp \"$PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \nprintf \"Creating Dev Configuration\";\ncp \"$PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+			shellScript = "echo \"=== Firebase Environment Setup ===\"\necho \"CONFIGURATION: $CONFIGURATION\"\necho \"PROJECT_DIR: $PROJECT_DIR\"\necho \"BUILT_PRODUCTS_DIR: $BUILT_PRODUCTS_DIR\"\necho \"PRODUCT_NAME: $PRODUCT_NAME\"\n\nif [[ \"$CONFIGURATION\" == *Production* ]]; then\n    echo \"Creating Release Configuration\"\n    if [ -f \"$PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\" ]; then\n        cp \"$PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n        echo \"Release plist copied successfully\"\n    else\n        echo \"ERROR: Release plist not found at $PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\"\n        exit 1\n    fi\nelse \n    echo \"Creating Dev Configuration\"\n    if [ -f \"$PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\" ]; then\n        cp \"$PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n        echo \"Dev plist copied successfully\"\n    else\n        echo \"ERROR: Dev plist not found at $PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\"\n        exit 1\n    fi\nfi\necho \"=== Setup Complete ===\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
