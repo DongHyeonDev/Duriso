@@ -925,6 +925,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		C9D5FB672E3CD7FE00C1E4BD /* Setup Firebase Environment GoogleService-Info.plist */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
