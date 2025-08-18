@@ -15,6 +15,11 @@ struct Font {
     return UIFont(name: name, size: size)
   }
   
+  // Dynamic Type를 고려한 스케일 폰트 반환
+  func scaledFont(textStyle: UIFont.TextStyle) -> UIFont {
+    let baseFont = UIFont(name: name, size: size) ?? UIFont.preferredFont(forTextStyle: textStyle)
+    return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: baseFont)
+  }
 }
 
 struct CustomFont {
