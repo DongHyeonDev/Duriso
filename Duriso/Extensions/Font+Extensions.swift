@@ -22,29 +22,29 @@ struct Font {
   }
 }
 
-struct CustomFont {
-  static let Display: Font = Font(name: "NotoSansKR-Bold", size: 28.0)
+enum CustomFont {
+  static let Display = Font(name: "NotoSansKR-Bold", size: 28.0)
   
-  static let Head: Font = Font(name: "NotoSansKR-Bold", size: 24.0)
-  static let Head2: Font = Font(name: "NotoSansKR-Bold", size: 20.0)
-  static let Head3: Font = Font(name: "NotoSansKR-Bold", size: 18.0)
-  static let Head4: Font = Font(name: "NotoSansKR-Bold", size: 16.0)
-  static let Head5: Font = Font(name: "NotoSansKR-Bold", size: 14.0)
-  static let Head6: Font = Font(name: "NotoSansKR-Bold", size: 12.0)
+  static let Head  = Font(name: "NotoSansKR-Bold", size: 24.0)
+  static let Head2 = Font(name: "NotoSansKR-Bold", size: 20.0)
+  static let Head3 = Font(name: "NotoSansKR-Bold", size: 18.0)
+  static let Head4 = Font(name: "NotoSansKR-Bold", size: 16.0)
+  static let Head5 = Font(name: "NotoSansKR-Bold", size: 14.0)
+  static let Head6 = Font(name: "NotoSansKR-Bold", size: 12.0)
   
-  static let Body: Font = Font(name: "NotoSansKR-Regular", size: 20.0)
-  static let Body2: Font = Font(name: "NotoSansKR-Regular", size: 18.0)
-  static let Body3: Font = Font(name: "NotoSansKR-Regular", size: 16.0)
-  static let Body4: Font = Font(name: "NotoSansKR-Regular", size: 14.0)
+  static let Body  = Font(name: "NotoSansKR-Regular", size: 20.0)
+  static let Body2 = Font(name: "NotoSansKR-Regular", size: 18.0)
+  static let Body3 = Font(name: "NotoSansKR-Regular", size: 16.0)
+  static let Body4 = Font(name: "NotoSansKR-Regular", size: 14.0)
   
-  static let sub: Font = Font(name: "NotoSansKR-Light", size: 16.0)
-  static let sub2: Font = Font(name: "NotoSansKR-Light", size: 12.0)
+  static let sub  = Font(name: "NotoSansKR-Light", size: 16.0)
+  static let sub2 = Font(name: "NotoSansKR-Light", size: 12.0)
   
-  static let Deco: Font = Font(name: "HSSaemaul", size: 32.0)
-  static let Deco2: Font = Font(name: "HSSaemaul", size: 28.0)
-  static let Deco3: Font = Font(name: "HSSaemaul", size: 24.0)
-  static let Deco4: Font = Font(name: "HSSaemaul", size: 20.0)
-  static let Deco5: Font = Font(name: "HSSaemaul", size: 18.0)
+  static let Deco  = Font(name: "HSSaemaul", size: 32.0)
+  static let Deco2 = Font(name: "HSSaemaul", size: 28.0)
+  static let Deco3 = Font(name: "HSSaemaul", size: 24.0)
+  static let Deco4 = Font(name: "HSSaemaul", size: 20.0)
+  static let Deco5 = Font(name: "HSSaemaul", size: 18.0)
   
   static func allFonts() -> [(font: UIFont?, name: String, size: CGFloat)] {
     return [
