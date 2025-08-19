@@ -75,7 +75,7 @@ class EmergencyWrittingViewController: UIViewController, UITextViewDelegate {
     $0.setTitleColor(.CWhite, for: .normal)
     $0.backgroundColor = .CBlue
     $0.layer.cornerRadius = 17
-    $0.addTarget(self, action: #selector(didTapAddPostButton), for: .touchUpInside)
+    $0.addTarget(EmergencyWrittingViewController.self, action: #selector(didTapAddPostButton), for: .touchUpInside)
     $0.isEnabled = false  // 처음에 비활성화
     $0.alpha = 0.5  // 비활성화 상태일 때 반투명
   }

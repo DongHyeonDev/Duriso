@@ -84,7 +84,7 @@ class OfflineCivilDefenseShelterViewController: UIViewController {
     $0.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
     $0.tintColor = .CLightBlue
     $0.contentMode = .scaleAspectFit
-    $0.addTarget(self, action: #selector(didTapCancelButton), for: .touchUpInside)
+    $0.addTarget(OfflineCivilDefenseShelterViewController.self, action: #selector(didTapCancelButton), for: .touchUpInside)
   }
   
   final let latLabel = UILabel().then {

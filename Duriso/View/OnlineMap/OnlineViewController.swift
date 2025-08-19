@@ -57,7 +57,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   let addressRefreshButton = UIButton().then {
     $0.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
     $0.tintColor = .CBlack
-    $0.addTarget(self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
+    $0.addTarget(OnlineViewController.self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
   }
   
   let buttonStackView = UIStackView().then {
@@ -75,7 +75,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   
   let writingButton = UIButton().then {
     $0.setImage(UIImage(named: "writingButton"), for: .normal)
-    $0.addTarget(self, action: #selector(didTapWritingButton), for: .touchUpInside)
+    $0.addTarget(OnlineViewController.self, action: #selector(didTapWritingButton), for: .touchUpInside)
   }
   
   lazy var shelterButton: UIButton = createButton(
