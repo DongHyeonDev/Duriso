@@ -85,7 +85,7 @@ class SignUpViewController: UIViewController {
   }
   
   private let legalNoticeTableView = UITableView().then {
-    $0.register(SignUptableViewCell.self, forCellReuseIdentifier: "LegalNoticeCell")
+    $0.register(SignUpTableViewCell.self, forCellReuseIdentifier: "LegalNoticeCell")
     $0.backgroundColor = .CWhite
     $0.rowHeight = 32
     $0.isScrollEnabled = false
@@ -223,7 +223,7 @@ class SignUpViewController: UIViewController {
     viewModel2.items
       .bind(to: legalNoticeTableView.rx.items(
         cellIdentifier: "LegalNoticeCell",
-        cellType: SignUptableViewCell.self)
+        cellType: SignUpTableViewCell.self)
       ) { [weak self] row, item, cell in
         cell.configure(with: item.title)
         cell.onCheckboxStateChange = { isChecked in

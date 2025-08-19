@@ -154,7 +154,7 @@
 		E2DAB8622C863AE00037BCA2 /* LegalNoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAB8612C863AE00037BCA2 /* LegalNoticeViewModel.swift */; };
 		E2E4F0992C96BD00004808CC /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0982C96BD00004808CC /* NoticeViewModel.swift */; };
 		E2E4F09E2C9B26D4004808CC /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F09D2C9B26D4004808CC /* ChangePasswordViewController.swift */; };
-		E2E4F0A22CA2C6D1004808CC /* SignUptableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A12CA2C6D1004808CC /* SignUptableViewCell.swift */; };
+		E2E4F0A22CA2C6D1004808CC /* SignUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A12CA2C6D1004808CC /* SignUpTableViewCell.swift */; };
 		E2E4F0A42CA6AB1E004808CC /* MuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A32CA6AB1E004808CC /* MuteViewController.swift */; };
 		E2E4F0A72CA6CBBB004808CC /* MuteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A62CA6CBBB004808CC /* MuteTableViewCell.swift */; };
 		E2E4F0A92CA9081F004808CC /* MuteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A82CA9081F004808CC /* MuteViewModel.swift */; };
@@ -296,7 +296,7 @@
 		E2DAB8612C863AE00037BCA2 /* LegalNoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalNoticeViewModel.swift; sourceTree = "<group>"; };
 		E2E4F0982C96BD00004808CC /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		E2E4F09D2C9B26D4004808CC /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		E2E4F0A12CA2C6D1004808CC /* SignUptableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUptableViewCell.swift; sourceTree = "<group>"; };
+		E2E4F0A12CA2C6D1004808CC /* SignUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewCell.swift; sourceTree = "<group>"; };
 		E2E4F0A32CA6AB1E004808CC /* MuteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteViewController.swift; sourceTree = "<group>"; };
 		E2E4F0A62CA6CBBB004808CC /* MuteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteTableViewCell.swift; sourceTree = "<group>"; };
 		E2E4F0A82CA9081F004808CC /* MuteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteViewModel.swift; sourceTree = "<group>"; };
@@ -785,7 +785,7 @@
 				E2792E1F2C7F4BAB00AD6C0E /* LoginViewController.swift */,
 				E2792E212C7F4BAB00AD6C0E /* SetNickNameViewController.swift */,
 				E2792E202C7F4BAB00AD6C0E /* SignUpViewController.swift */,
-				E2E4F0A12CA2C6D1004808CC /* SignUptableViewCell.swift */,
+				E2E4F0A12CA2C6D1004808CC /* SignUpTableViewCell.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -968,7 +968,7 @@
 				7676228E2C85F2190075B09E /* OfflinePageViewController.swift in Sources */,
 				146A28E52C9804BC00AF2C97 /* EditPostViewController.swift in Sources */,
 				766DD9FA2CA5E4FD001C100A /* AEDDataManager.swift in Sources */,
-				E2E4F0A22CA2C6D1004808CC /* SignUptableViewCell.swift in Sources */,
+				E2E4F0A22CA2C6D1004808CC /* SignUpTableViewCell.swift in Sources */,
 				1426761F2C99C629004C56D5 /* GuidelinePDFViewController.swift in Sources */,
 				E2E4F0A42CA6AB1E004808CC /* MuteViewController.swift in Sources */,
 				7622D0742C7C21BE00B1AEB2 /* OfflineMapModel.swift in Sources */,
