@@ -9,6 +9,7 @@ import UIKit
 
 import FirebaseCore
 import IQKeyboardManagerSwift
+import IQKeyboardToolbarManager
 import KakaoMapsSDK
 
 @main
@@ -38,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // IQKeyboardManager 사용 설정
     IQKeyboardManager.shared.enable = true
-    IQKeyboardManager.shared.enableAutoToolbar = true
+    IQKeyboardToolbarManager.shared.isEnabled = true
     IQKeyboardManager.shared.resignOnTouchOutside = true
     
     // TabBar 색상 지정
