@@ -118,7 +118,6 @@
 		76EFE8CE2C904D0B0077D75B /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFE8CD2C904D0B0077D75B /* OfflineViewController.swift */; };
 		C97523042E4078B9004DA769 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = C97523032E4078B9004DA769 /* GoogleService-Info-Dev.plist */; };
 		C9D562942E549412009A3A18 /* IQKeyboardToolbarManager in Frameworks */ = {isa = PBXBuildFile; productRef = C9D562932E549412009A3A18 /* IQKeyboardToolbarManager */; };
-		D60A81652C9CF49F00589AD3 /* AedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A81642C9CF49F00589AD3 /* AedDataManager.swift */; };
 		D61268992C8A81D50031114E /* PoiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61268982C8A81D50031114E /* PoiViewModel.swift */; };
 		D61268A52C8A82060031114E /* OnlineMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D612689E2C8A82050031114E /* OnlineMapModel.swift */; };
 		D61268AC2C8A82320031114E /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61268A82C8A82320031114E /* OnlineViewController.swift */; };
@@ -256,7 +255,6 @@
 		76EFE8CD2C904D0B0077D75B /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 		C97523032E4078B9004DA769 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Dev.plist"; path = "Duriso/GoogleService-Info-Dev.plist"; sourceTree = SOURCE_ROOT; };
 		C9D590D92E3B4E28005FFF7F /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = Duriso/Development.xcconfig; sourceTree = SOURCE_ROOT; };
-		D60A81642C9CF49F00589AD3 /* AedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AedDataManager.swift; sourceTree = "<group>"; };
 		D61268982C8A81D50031114E /* PoiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoiViewModel.swift; sourceTree = "<group>"; };
 		D612689E2C8A82050031114E /* OnlineMapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineMapModel.swift; sourceTree = "<group>"; };
 		D61268A82C8A82320031114E /* OnlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
@@ -750,7 +748,6 @@
 			isa = PBXGroup;
 			children = (
 				D69CF2BB2C8FD5C900B4E546 /* AedNetworkManager.swift */,
-				D60A81642C9CF49F00589AD3 /* AedDataManager.swift */,
 				D69CF2B02C8E7D4300B4E546 /* ShelterNetworkManager.swift */,
 			);
 			path = OnlineMapNetworkManager;
@@ -1010,7 +1007,6 @@
 				E2334CF92C947300003D9612 /* NoticeModel.swift in Sources */,
 				766DDA292CA88E60001C100A /* OfflineCivilDefenseShelterViewController.swift in Sources */,
 				76EFE8B12C8B5E5B0077D75B /* BoardViewController.swift in Sources */,
-				D60A81652C9CF49F00589AD3 /* AedDataManager.swift in Sources */,
 				E2E4F09E2C9B26D4004808CC /* ChangePasswordViewController.swift in Sources */,
 				766DDA1E2CA80B8A001C100A /* UIImage+Resize.swift in Sources */,
 				7622D0782C7C21D100B1AEB2 /* GuidelineModel.swift in Sources */,
