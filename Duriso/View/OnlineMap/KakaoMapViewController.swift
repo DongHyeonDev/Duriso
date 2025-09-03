@@ -111,11 +111,11 @@ class KakaoMapViewController: UIViewController, MapControllerDelegate {
       return
     }
     
-    guard mapController.getView("mapview") is KakaoMap else {
+    guard let mapView = mapController.getView("mapview") as? KakaoMap else {
       print("Error: mapView is nil after addViewSucceeded")
       return
     }
-    
+    mapView.setLogoPosition(origin: GuiAlignment(vAlign: .bottom, hAlign: .right), position: CGPoint(x: 5.0, y: 85.0))
     print("mapView initialized successfully after addViewSucceeded")
     goToCurrentLocation()  // 현재 위치로 이동
     
