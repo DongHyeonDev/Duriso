@@ -1,5 +1,5 @@
 //
-//  SignUptableViewCell.swift
+//  SignUpTableViewCell.swift
 //  Duriso
 //
 //  Created by t2023-m0102 on 9/24/24.
@@ -11,7 +11,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class SignUptableViewCell: UITableViewCell {
+class SignUpTableViewCell: UITableViewCell {
   
   private let checkboxButton = UIButton().then {
     $0.setImage(UIImage(systemName: "square"), for: .normal)

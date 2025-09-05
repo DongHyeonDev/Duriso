@@ -15,8 +15,8 @@ class CoreDataManager {
   lazy var persistentContainer: NSPersistentContainer = {
     let container = NSPersistentContainer(name: "Duriso")
     container.loadPersistentStores { _, error in
-      if let error = error {
-        fatalError("Unresolved error \(error)")
+      if let error = error as NSError? {
+        fatalError("Unresolved error \(error), \(error.userInfo)")
       }
     }
     return container

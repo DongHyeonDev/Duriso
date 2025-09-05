@@ -33,7 +33,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   public var dong: String = ""
   
   // UI 요소
-  let addressView = UIStackView().then {
+  private let addressView = UIStackView().then {
     $0.backgroundColor = .CWhite
     $0.axis = .horizontal
     $0.distribution = .fill
@@ -45,7 +45,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     $0.layer.masksToBounds = false
   }
   
-  let addressLabel = UILabel().then {
+  private let addressLabel = UILabel().then {
     $0.backgroundColor = .CWhite
     $0.text = "위치 확인 중..."
     $0.textColor = .CBlack
@@ -54,28 +54,25 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     $0.font = CustomFont.Head4.font()
   }
   
-  let addressRefreshButton = UIButton().then {
+  private let addressRefreshButton = UIButton().then {
     $0.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
     $0.tintColor = .CBlack
-    $0.addTarget(self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
   }
   
-  let buttonStackView = UIStackView().then {
+  private let buttonStackView = UIStackView().then {
     $0.alignment = .center
     $0.distribution = .fillEqually
     $0.axis = .horizontal
     $0.spacing = 8
   }
   
-  lazy var currentLocationButton = UIButton().then {
+  private let currentLocationButton = UIButton().then {
     $0.setImage(UIImage(named: "locationButton"), for: .normal)
     $0.imageView?.contentMode = .scaleAspectFit
-    $0.addTarget(self, action: #selector(didTapCurrentLocationButton), for: .touchUpInside)
   }
   
-  let writingButton = UIButton().then {
+  private let writingButton = UIButton().then {
     $0.setImage(UIImage(named: "writingButton"), for: .normal)
-    $0.addTarget(self, action: #selector(didTapWritingButton), for: .touchUpInside)
   }
   
   lazy var shelterButton: UIButton = createButton(
@@ -113,6 +110,10 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     LocationManager.shared.onLocationUpdate = { [weak self] latitude, longitude in
       self?.updatePlaceNameLabel(latitude: latitude, longitude: longitude)
     }
+    
+    addressRefreshButton.addTarget(self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
+    currentLocationButton.addTarget(self, action: #selector(didTapCurrentLocationButton), for: .touchUpInside)
+    writingButton.addTarget(self, action: #selector(didTapWritingButton), for: .touchUpInside)
   }
   
   override func viewWillAppear(_ animated: Bool) {
