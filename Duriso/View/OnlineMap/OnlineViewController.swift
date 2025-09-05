@@ -279,7 +279,8 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       print("Error: Failed to get mapView")
       return
     }
-    let centerMapPoint = mapView.getPosition(CGPoint(x: 0.5, y: 0.5))
+    let viewCenter = CGPoint(x: onlineMapViewController.view.bounds.midX, y: onlineMapViewController.view.bounds.midY)
+    let centerMapPoint = mapView.getPosition(viewCenter)
     let latitude = centerMapPoint.wgsCoord.latitude
     let longitude = centerMapPoint.wgsCoord.longitude
     poiViewModel.fetchDataForLocation(latitude: latitude, longitude: longitude)
