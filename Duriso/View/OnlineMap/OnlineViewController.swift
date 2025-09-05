@@ -108,7 +108,8 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     
     // 위치 업데이트 콜백 설정
     LocationManager.shared.onLocationUpdate = { [weak self] latitude, longitude in
-      self?.updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+//      self?.updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+      self?.autoUpdateAddressLabel()
     }
     
     addressRefreshButton.addTarget(self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
@@ -312,7 +313,9 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     let latitude = centerMapPoint.wgsCoord.latitude
     let longitude = centerMapPoint.wgsCoord.longitude
     poiViewModel.fetchDataForLocation(latitude: latitude, longitude: longitude)
-    updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+//    updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+    autoUpdateAddressLabel()
+    LocationManager.shared.stopUpdatingLocation()
     print("Latitude: \(latitude), Longitude: \(longitude)")
   }
   
@@ -324,7 +327,8 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       onlineMapViewController.updateCurrentLocation(latitude: latitude, longitude: longitude)
       onlineMapViewController.moveCameraToCurrentLocation(latitude: latitude, longitude: longitude)
       poiViewModel.fetchDataForLocation(latitude: latitude, longitude: longitude)
-      updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+//      updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+      autoUpdateAddressLabel()
     } else {
       LocationManager.shared.startUpdatingLocation()
     }
