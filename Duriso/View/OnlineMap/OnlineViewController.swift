@@ -66,13 +66,43 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     $0.spacing = 8
   }
   
-  private let currentLocationButton = UIButton().then {
+  let rightButtonStackView = UIStackView().then {
+    $0.alignment = .center
+    $0.distribution = .fillEqually
+    $0.axis = .vertical
+    $0.spacing = 8
+  }
+  
+  let currentLocationButton = UIButton().then {
     $0.setImage(UIImage(named: "locationButton"), for: .normal)
     $0.imageView?.contentMode = .scaleAspectFit
+//    $0.setImage(UIImage(systemName: "location", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .semibold)), for: .normal)
+//    $0.setImage(UIImage(systemName: "location.fill"), for: .selected)
+//    $0.backgroundColor = .CWhite
+//    $0.tintColor = .CBlue
+//    $0.layer.borderWidth = 1
+//    $0.layer.cornerRadius = 5
+    $0.layer.shadowColor = UIColor.black.cgColor
+    $0.layer.shadowOffset = CGSize(width: 0, height: 4)
+    $0.layer.shadowRadius = 4
+    $0.layer.shadowOpacity = 0.2
+    $0.layer.masksToBounds = false
+    $0.addTarget(self, action: #selector(didTapCurrentLocationButton), for: .touchUpInside)
   }
   
   private let writingButton = UIButton().then {
     $0.setImage(UIImage(named: "writingButton"), for: .normal)
+//    $0.setImage(UIImage(systemName: "square.and.pencil", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .semibold)), for: .normal)
+//    $0.backgroundColor = .CWhite
+//    $0.tintColor = .CBlue
+//    $0.layer.borderWidth = 1
+//    $0.layer.cornerRadius = 5
+    $0.layer.shadowColor = UIColor.black.cgColor
+    $0.layer.shadowOffset = CGSize(width: 0, height: 4)
+    $0.layer.shadowRadius = 4
+    $0.layer.shadowOpacity = 0.2
+    $0.layer.masksToBounds = false
+    $0.addTarget(self, action: #selector(didTapWritingButton), for: .touchUpInside)
   }
   
   lazy var shelterButton: UIButton = createButton(
@@ -126,17 +156,33 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   // MARK: - View Setup
   
   func setupViews() {
-    addChild(onlineMapViewController)
-    view.addSubview(onlineMapViewController.view)
-    view.addSubview(offlineMapViewController.view)
+    [
+      onlineMapViewController,
+      offlineMapViewController
+    ].forEach { self.addChild($0) }
+    
+    [
+      onlineMapViewController.view,
+      offlineMapViewController.view
+    ].forEach { self.view.addSubview($0) }
+    
+//    view.addSubview(onlineMapViewController.view)
+//    view.addSubview(offlineMapViewController.view)
     onlineMapViewController.didMove(toParent: self)
     offlineMapViewController.view.isHidden = true
+    
     [
       addressView,
-      currentLocationButton,
-      buttonStackView,
-      writingButton
+      rightButtonStackView,
+      poiButtonStackView,
+//      currentLocationButton,
+//      writingButton
     ].forEach { view.addSubview($0) }
+    
+    [
+      currentLocationButton,
+      writingButton
+    ].forEach { rightButtonStackView.addArrangedSubview($0) }
     
     [
       shelterButton,
@@ -154,6 +200,10 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   
   func setupConstraints() {
     onlineMapViewController.view.snp.makeConstraints {
+      $0.edges.equalToSuperview()
+    }
+    // 오프라인 맵도 화면 전체에 맞게 제약 추가
+    offlineMapViewController.view.snp.makeConstraints {
       $0.edges.equalToSuperview()
     }
     
@@ -176,15 +226,20 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       $0.width.height.equalTo(20)
     }
     
+    rightButtonStackView.snp.makeConstraints {
+      $0.trailing.equalToSuperview().inset(16)
+      $0.bottom.equalTo(poiButtonStackView.snp.top).offset(-16)
+    }
+    
     currentLocationButton.snp.makeConstraints {
-      $0.trailing.equalToSuperview().offset(-16)
-      $0.bottom.equalTo(writingButton.snp.top).offset(-8)
+//      $0.trailing.equalToSuperview().offset(-16)
+//      $0.bottom.equalTo(writingButton.snp.top).offset(-16)
       $0.width.height.equalTo(40)
     }
     
     writingButton.snp.makeConstraints {
-      $0.trailing.equalToSuperview().offset(-16)
-      $0.bottom.equalTo(buttonStackView.snp.top).offset(-16)
+//      $0.trailing.equalToSuperview().offset(-16)
+//      $0.bottom.equalTo(poiButtonStackView.snp.top).offset(-16)
       $0.width.height.equalTo(40)
     }
     
