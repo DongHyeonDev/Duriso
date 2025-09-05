@@ -52,8 +52,16 @@ class OfflineViewController: UIViewController {
   }
   
   private func setupViews() {
-    addChild(offlineMapViewController)
-    view.addSubview(offlineMapViewController.view)
+    [
+      offlineMapViewController
+    ].forEach { self.addChild($0) }
+    
+    [
+      offlineMapViewController.view
+    ].forEach { self.view.addSubview($0) }
+    
+//    addChild(offlineMapViewController)
+//    view.addSubview(offlineMapViewController.view)
     offlineMapViewController.didMove(toParent: self)
     
     [

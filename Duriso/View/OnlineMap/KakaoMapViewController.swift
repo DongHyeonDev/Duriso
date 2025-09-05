@@ -111,10 +111,15 @@ class KakaoMapViewController: UIViewController, MapControllerDelegate {
       return
     }
     
-    guard mapController.getView("mapview") is KakaoMap else {
+    guard let mapView = mapController.getView("mapview") as? KakaoMap else {
       print("Error: mapView is nil after addViewSucceeded")
       return
     }
+    mapView.setLogoPosition(origin: GuiAlignment(vAlign: .bottom, hAlign: .left), position: CGPoint(x: 5.0, y: 85.0))
+    mapView.setScaleBarPosition(origin: GuiAlignment(vAlign: .bottom, hAlign: .right), position: CGPoint(x: 5.0, y: 85.0))
+    mapView.setCompassPosition(origin: GuiAlignment(vAlign: .top, hAlign: .right), position: CGPoint(x: 8.0, y: 60.0))
+    mapView.showScaleBar()
+    mapView.showCompass()
     
     print("mapView initialized successfully after addViewSucceeded")
     goToCurrentLocation()  // 현재 위치로 이동
@@ -267,5 +272,13 @@ class KakaoMapViewController: UIViewController, MapControllerDelegate {
     )
     mapView.moveCamera(cameraUpdate)
     print("Camera moved to current position")
+  }
+}
+
+extension KakaoMapViewController: KakaoMapEventDelegate {
+  func compassDidTapped(kakaoMap: KakaoMap) {
+    print("compass tapped")
+    
+    kakaoMap.resetCameraOrientation()
   }
 }
