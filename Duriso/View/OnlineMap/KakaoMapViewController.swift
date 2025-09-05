@@ -115,7 +115,7 @@ class KakaoMapViewController: UIViewController, MapControllerDelegate {
       print("Error: mapView is nil after addViewSucceeded")
       return
     }
-    mapView.setLogoPosition(origin: GuiAlignment(vAlign: .bottom, hAlign: .right), position: CGPoint(x: 5.0, y: 85.0))
+    mapView.setLogoPosition(origin: GuiAlignment(vAlign: .bottom, hAlign: .left), position: CGPoint(x: 5.0, y: 85.0))
     print("mapView initialized successfully after addViewSucceeded")
     goToCurrentLocation()  // 현재 위치로 이동
     
