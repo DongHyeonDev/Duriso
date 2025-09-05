@@ -54,8 +54,8 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     $0.font = CustomFont.Head4.font()
   }
   
-  private let addressRefreshButton = UIButton().then {
-    $0.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
+  let addressRefreshButton = UIButton().then {
+    $0.setImage(UIImage(systemName: "arrow.clockwise", withConfiguration: UIImage.SymbolConfiguration(pointSize: 16, weight: .semibold)), for: .normal)
     $0.tintColor = .CBlack
   }
   
@@ -100,6 +100,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.navigationBar.isHidden = true
     view.backgroundColor = .white
     setupViews()  // 뷰 설정
     setupConstraints()  // 제약 조건 설정
@@ -158,7 +159,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     
     addressView.snp.makeConstraints {
       $0.centerX.equalToSuperview()
-      $0.top.equalTo(view.safeAreaLayoutGuide).offset(-16)
+      $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)/*.offset(-16)*/
       $0.width.equalTo(280)
       $0.height.equalTo(40)
     }
@@ -172,7 +173,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     addressRefreshButton.snp.makeConstraints {
       $0.centerY.equalTo(addressView)
       $0.trailing.equalTo(addressView).offset(-10)
-      $0.width.height.equalTo(16)
+      $0.width.height.equalTo(20)
     }
     
     currentLocationButton.snp.makeConstraints {
@@ -190,7 +191,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     buttonStackView.snp.makeConstraints {
       $0.centerX.equalToSuperview()
       $0.leading.trailing.equalToSuperview().inset(16)
-      $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(13)
+      $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
     }
     
     shelterButton.snp.makeConstraints {
