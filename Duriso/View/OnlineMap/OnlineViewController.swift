@@ -59,7 +59,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     $0.tintColor = .CBlack
   }
   
-  private let buttonStackView = UIStackView().then {
+  let poiButtonStackView = UIStackView().then {
     $0.alignment = .center
     $0.distribution = .fillEqually
     $0.axis = .horizontal
@@ -142,7 +142,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       shelterButton,
       aedButton,
       emergencyReportButton
-    ].forEach { buttonStackView.addArrangedSubview($0) }
+    ].forEach { poiButtonStackView.addArrangedSubview($0) }
     
     [
       addressLabel,
@@ -188,7 +188,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       $0.width.height.equalTo(40)
     }
     
-    buttonStackView.snp.makeConstraints {
+    poiButtonStackView.snp.makeConstraints {
       $0.centerX.equalToSuperview()
       $0.leading.trailing.equalToSuperview().inset(16)
       $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
