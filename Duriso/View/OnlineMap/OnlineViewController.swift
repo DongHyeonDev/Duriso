@@ -253,7 +253,35 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   
   // MARK: - Location and Address Handling
   
-  func updatePlaceNameLabel(latitude: Double, longitude: Double) {
+//  func updatePlaceNameLabel(latitude: Double, longitude: Double) {
+//    let regionFetcher = RegionFetcher()
+//    regionFetcher.fetchRegion(longitude: longitude, latitude: latitude) { [weak self] documents, error in
+//      guard let self = self else { return }
+//      if let document = documents?.first {
+//        self.si = document.region1DepthName
+//        self.gu = document.region2DepthName
+//        self.dong = document.region3DepthName
+//        DispatchQueue.main.async {
+//          let region = "\(self.si) \(self.gu) \(self.dong)"
+//          self.addressLabel.text = region
+//          print("Your Location is: \(region)")
+//        }
+//      }
+//      if let error = error {
+//        print("Error fetching region: \(error)")
+//      }
+//    }
+//  }
+//  
+  func autoUpdateAddressLabel() {
+    guard let mapView = onlineMapViewController.mapController?.getView("mapview") as? KakaoMap else {
+      print("Error: Failed to get mapView")
+      return
+    }
+    let viewCenter = CGPoint(x: onlineMapViewController.view.bounds.midX, y: onlineMapViewController.view.bounds.midY)
+    let centerMapPoint = mapView.getPosition(viewCenter)
+    let latitude = centerMapPoint.wgsCoord.latitude
+    let longitude = centerMapPoint.wgsCoord.longitude
     let regionFetcher = RegionFetcher()
     regionFetcher.fetchRegion(longitude: longitude, latitude: latitude) { [weak self] documents, error in
       guard let self = self else { return }
