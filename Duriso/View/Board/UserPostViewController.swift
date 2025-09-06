@@ -154,7 +154,7 @@ class UserPostViewController: UIViewController {
     $0.spacing = 8
   }
   
-  private let nickNameTextSymblo = UILabel().then {
+  private let nickNameTextSymbol = UILabel().then {
     let clockAttachment = NSTextAttachment()
     clockAttachment.image = UIImage(systemName: "person")
     clockAttachment.bounds = CGRect(x: 0, y: -2, width: 16, height: 16)
@@ -208,7 +208,7 @@ class UserPostViewController: UIViewController {
       postingLocationeName1,
       postingStackView,
       postingImage,
-      nickNameTextSymblo,
+      nickNameTextSymbol,
       postingUserTextLabel,
       postingLineView3,
       contentView,
@@ -260,7 +260,7 @@ class UserPostViewController: UIViewController {
       $0.width.equalToSuperview().inset(24)
     }
     
-    nickNameTextSymblo.snp.makeConstraints {
+    nickNameTextSymbol.snp.makeConstraints {
       $0.top.equalTo(postingLineView1.snp.bottom).offset(16)
       $0.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).inset(24)
       $0.height.equalTo(30)
@@ -268,7 +268,7 @@ class UserPostViewController: UIViewController {
     
     nickNameLabel.snp.makeConstraints {
       $0.top.equalTo(postingLineView1.snp.bottom).offset(16)
-      $0.leading.equalTo(nickNameTextSymblo.snp.trailing).offset(8)
+      $0.leading.equalTo(nickNameTextSymbol.snp.trailing).offset(8)
       $0.height.equalTo(30)
     }
     

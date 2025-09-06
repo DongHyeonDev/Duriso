@@ -54,7 +54,7 @@
 		7622D0822C7C6C5500B1AEB2 /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61B612A2C7C582800C5E69D /* NotoSansKR-Bold.ttf */; };
 		7622D0832C7C6C5500B1AEB2 /* NotoSansKR-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61B612C2C7C582800C5E69D /* NotoSansKR-Light.ttf */; };
 		7622D0842C7C6C5500B1AEB2 /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61B612B2C7C582800C5E69D /* NotoSansKR-Regular.ttf */; };
-		7622D08A2C7EB32900B1AEB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7622D0892C7EB32900B1AEB2 /* GoogleService-Info.plist */; };
+		7622D08A2C7EB32900B1AEB2 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7622D0892C7EB32900B1AEB2 /* GoogleService-Info-Release.plist */; };
 		763C0A302C7B125C006BC4E7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 763C0A2F2C7B125C006BC4E7 /* Base */; };
 		763C0A382C7B17AE006BC4E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 763C0A372C7B17AE006BC4E7 /* README.md */; };
 		763C0A3A2C7B180A006BC4E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 763C0A392C7B180A006BC4E7 /* .gitignore */; };
@@ -116,7 +116,8 @@
 		76EFE8BA2C8F20BC0077D75B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFE8B92C8F20BC0077D75B /* SignUpViewModel.swift */; };
 		76EFE8BD2C8F3CBB0077D75B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76EFE8BC2C8F3CBB0077D75B /* IQKeyboardManagerSwift */; };
 		76EFE8CE2C904D0B0077D75B /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFE8CD2C904D0B0077D75B /* OfflineViewController.swift */; };
-		D60A81652C9CF49F00589AD3 /* AedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A81642C9CF49F00589AD3 /* AedDataManager.swift */; };
+		C97523042E4078B9004DA769 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = C97523032E4078B9004DA769 /* GoogleService-Info-Dev.plist */; };
+		C9D562942E549412009A3A18 /* IQKeyboardToolbarManager in Frameworks */ = {isa = PBXBuildFile; productRef = C9D562932E549412009A3A18 /* IQKeyboardToolbarManager */; };
 		D61268992C8A81D50031114E /* PoiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61268982C8A81D50031114E /* PoiViewModel.swift */; };
 		D61268A52C8A82060031114E /* OnlineMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D612689E2C8A82050031114E /* OnlineMapModel.swift */; };
 		D61268AC2C8A82320031114E /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61268A82C8A82320031114E /* OnlineViewController.swift */; };
@@ -152,7 +153,7 @@
 		E2DAB8622C863AE00037BCA2 /* LegalNoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAB8612C863AE00037BCA2 /* LegalNoticeViewModel.swift */; };
 		E2E4F0992C96BD00004808CC /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0982C96BD00004808CC /* NoticeViewModel.swift */; };
 		E2E4F09E2C9B26D4004808CC /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F09D2C9B26D4004808CC /* ChangePasswordViewController.swift */; };
-		E2E4F0A22CA2C6D1004808CC /* SignUptableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A12CA2C6D1004808CC /* SignUptableViewCell.swift */; };
+		E2E4F0A22CA2C6D1004808CC /* SignUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A12CA2C6D1004808CC /* SignUpTableViewCell.swift */; };
 		E2E4F0A42CA6AB1E004808CC /* MuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A32CA6AB1E004808CC /* MuteViewController.swift */; };
 		E2E4F0A72CA6CBBB004808CC /* MuteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A62CA6CBBB004808CC /* MuteTableViewCell.swift */; };
 		E2E4F0A92CA9081F004808CC /* MuteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F0A82CA9081F004808CC /* MuteViewModel.swift */; };
@@ -198,7 +199,7 @@
 		7622D0752C7C21C700B1AEB2 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		7622D0772C7C21D100B1AEB2 /* GuidelineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineModel.swift; sourceTree = "<group>"; };
 		7622D0792C7C21DA00B1AEB2 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
-		7622D0892C7EB32900B1AEB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Duriso/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7622D0892C7EB32900B1AEB2 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Release.plist"; path = "Duriso/GoogleService-Info-Release.plist"; sourceTree = SOURCE_ROOT; };
 		763C0A202C7B125B006BC4E7 /* Duriso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duriso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763C0A232C7B125B006BC4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		763C0A2F2C7B125C006BC4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -228,7 +229,7 @@
 		767622822C85C8610075B09E /* OfflinePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePageViewController.swift; sourceTree = "<group>"; };
 		767622842C85CA790075B09E /* OfflinePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePageViewModel.swift; sourceTree = "<group>"; };
 		767622862C85CC9D0075B09E /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
-		7676228B2C85E6710075B09E /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = Duriso/Secrets.xcconfig; sourceTree = SOURCE_ROOT; };
+		7676228B2C85E6710075B09E /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = Duriso/Production.xcconfig; sourceTree = SOURCE_ROOT; };
 		768F50962C881F9A00A92ED6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		768F509E2C89DC0D00A92ED6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		768F50A02C8A99FF00A92ED6 /* Duriso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Duriso.entitlements; sourceTree = "<group>"; };
@@ -252,7 +253,8 @@
 		76EFE8B72C8F1F580077D75B /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		76EFE8B92C8F20BC0077D75B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		76EFE8CD2C904D0B0077D75B /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
-		D60A81642C9CF49F00589AD3 /* AedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AedDataManager.swift; sourceTree = "<group>"; };
+		C97523032E4078B9004DA769 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Dev.plist"; path = "Duriso/GoogleService-Info-Dev.plist"; sourceTree = SOURCE_ROOT; };
+		C9D590D92E3B4E28005FFF7F /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = Duriso/Development.xcconfig; sourceTree = SOURCE_ROOT; };
 		D61268982C8A81D50031114E /* PoiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoiViewModel.swift; sourceTree = "<group>"; };
 		D612689E2C8A82050031114E /* OnlineMapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineMapModel.swift; sourceTree = "<group>"; };
 		D61268A82C8A82320031114E /* OnlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
@@ -292,7 +294,7 @@
 		E2DAB8612C863AE00037BCA2 /* LegalNoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalNoticeViewModel.swift; sourceTree = "<group>"; };
 		E2E4F0982C96BD00004808CC /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		E2E4F09D2C9B26D4004808CC /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		E2E4F0A12CA2C6D1004808CC /* SignUptableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUptableViewCell.swift; sourceTree = "<group>"; };
+		E2E4F0A12CA2C6D1004808CC /* SignUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewCell.swift; sourceTree = "<group>"; };
 		E2E4F0A32CA6AB1E004808CC /* MuteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteViewController.swift; sourceTree = "<group>"; };
 		E2E4F0A62CA6CBBB004808CC /* MuteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteTableViewCell.swift; sourceTree = "<group>"; };
 		E2E4F0A82CA9081F004808CC /* MuteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteViewModel.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				76EFE8BD2C8F3CBB0077D75B /* IQKeyboardManagerSwift in Frameworks */,
 				763C0A4B2C7B1B70006BC4E7 /* KakaoMapsSDK-SPM in Frameworks */,
 				7663B7EB2C92D0250066FE91 /* MapLibre in Frameworks */,
+				C9D562942E549412009A3A18 /* IQKeyboardToolbarManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,8 +659,10 @@
 				76174BEB2C9C332600909EDC /* Data */,
 				763C0A2E2C7B125C006BC4E7 /* LaunchScreen.storyboard */,
 				763C0A312C7B125C006BC4E7 /* Info.plist */,
-				7676228B2C85E6710075B09E /* Secrets.xcconfig */,
-				7622D0892C7EB32900B1AEB2 /* GoogleService-Info.plist */,
+				7676228B2C85E6710075B09E /* Production.xcconfig */,
+				C9D590D92E3B4E28005FFF7F /* Development.xcconfig */,
+				7622D0892C7EB32900B1AEB2 /* GoogleService-Info-Release.plist */,
+				C97523032E4078B9004DA769 /* GoogleService-Info-Dev.plist */,
 			);
 			path = Duriso;
 			sourceTree = "<group>";
@@ -743,7 +748,6 @@
 			isa = PBXGroup;
 			children = (
 				D69CF2BB2C8FD5C900B4E546 /* AedNetworkManager.swift */,
-				D60A81642C9CF49F00589AD3 /* AedDataManager.swift */,
 				D69CF2B02C8E7D4300B4E546 /* ShelterNetworkManager.swift */,
 			);
 			path = OnlineMapNetworkManager;
@@ -778,7 +782,7 @@
 				E2792E1F2C7F4BAB00AD6C0E /* LoginViewController.swift */,
 				E2792E212C7F4BAB00AD6C0E /* SetNickNameViewController.swift */,
 				E2792E202C7F4BAB00AD6C0E /* SignUpViewController.swift */,
-				E2E4F0A12CA2C6D1004808CC /* SignUptableViewCell.swift */,
+				E2E4F0A12CA2C6D1004808CC /* SignUpTableViewCell.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -802,6 +806,7 @@
 			buildPhases = (
 				763C0A1C2C7B125B006BC4E7 /* Sources */,
 				763C0A1D2C7B125B006BC4E7 /* Frameworks */,
+				C9D5FB672E3CD7FE00C1E4BD /* Setup Firebase Environment GoogleService-Info.plist */,
 				763C0A1E2C7B125B006BC4E7 /* Resources */,
 			);
 			buildRules = (
@@ -826,6 +831,7 @@
 				14334FC92CA7B1420092E9C8 /* Kingfisher */,
 				768507462CDA10DE00E64B77 /* GoogleSignIn */,
 				768507482CDA10DE00E64B77 /* GoogleSignInSwift */,
+				C9D562932E549412009A3A18 /* IQKeyboardToolbarManager */,
 			);
 			productName = Duriso;
 			productReference = 763C0A202C7B125B006BC4E7 /* Duriso.app */;
@@ -837,9 +843,9 @@
 		763C0A182C7B125B006BC4E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					763C0A1F2C7B125B006BC4E7 = {
 						CreatedOnToolsVersion = 15.4;
@@ -848,11 +854,12 @@
 			};
 			buildConfigurationList = 763C0A1B2C7B125B006BC4E7 /* Build configuration list for PBXProject "Duriso" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 763C0A172C7B125B006BC4E7;
 			packageReferences = (
@@ -866,6 +873,7 @@
 				7663B7E92C92D0250066FE91 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
 				14334FC82CA7B1420092E9C8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				768507452CDA10DE00E64B77 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				C9D562922E549412009A3A18 /* XCRemoteSwiftPackageReference "IQKeyboardToolbarManager" */,
 			);
 			productRefGroup = 763C0A212C7B125B006BC4E7 /* Products */;
 			projectDirPath = "";
@@ -891,6 +899,7 @@
 				76174BFB2C9C33B700909EDC /* earthquake.pdf in Resources */,
 				76174BFC2C9C33B700909EDC /* Alertcon.pdf in Resources */,
 				76174BFD2C9C33B700909EDC /* EmergencyKit.pdf in Resources */,
+				C97523042E4078B9004DA769 /* GoogleService-Info-Dev.plist in Resources */,
 				76174BFE2C9C33B700909EDC /* Typhoon.pdf in Resources */,
 				76174BFF2C9C33B700909EDC /* Heavysnow.pdf in Resources */,
 				76174C002C9C33B700909EDC /* HeatWave.pdf in Resources */,
@@ -902,7 +911,7 @@
 				D6C5F2B82CB24EBD00D65E9D /* Assets.xcassets in Resources */,
 				7622D0832C7C6C5500B1AEB2 /* NotoSansKR-Light.ttf in Resources */,
 				7622D0842C7C6C5500B1AEB2 /* NotoSansKR-Regular.ttf in Resources */,
-				7622D08A2C7EB32900B1AEB2 /* GoogleService-Info.plist in Resources */,
+				7622D08A2C7EB32900B1AEB2 /* GoogleService-Info-Release.plist in Resources */,
 				76DFBBDD2C9DABF300C676CF /* api.txt in Resources */,
 				763C0A3A2C7B180A006BC4E7 /* .gitignore in Resources */,
 				763C0A382C7B17AE006BC4E7 /* README.md in Resources */,
@@ -913,6 +922,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9D5FB672E3CD7FE00C1E4BD /* Setup Firebase Environment GoogleService-Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase Environment GoogleService-Info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"=== Firebase Environment Setup ===\"\necho \"CONFIGURATION: $CONFIGURATION\"\necho \"PROJECT_DIR: $PROJECT_DIR\"\necho \"BUILT_PRODUCTS_DIR: $BUILT_PRODUCTS_DIR\"\necho \"PRODUCT_NAME: $PRODUCT_NAME\"\n\nif [[ \"$CONFIGURATION\" == *Production* ]]; then\n    echo \"Creating Release Configuration\"\n    if [ -f \"$PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\" ]; then\n        cp \"$PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n        echo \"Release plist copied successfully\"\n    else\n        echo \"ERROR: Release plist not found at $PROJECT_DIR/Duriso/GoogleService-Info-Release.plist\"\n        exit 1\n    fi\nelse \n    echo \"Creating Dev Configuration\"\n    if [ -f \"$PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\" ]; then\n        cp \"$PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n        echo \"Dev plist copied successfully\"\n    else\n        echo \"ERROR: Dev plist not found at $PROJECT_DIR/Duriso/GoogleService-Info-Dev.plist\"\n        exit 1\n    fi\nfi\necho \"=== Setup Complete ===\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		763C0A1C2C7B125B006BC4E7 /* Sources */ = {
@@ -934,7 +965,7 @@
 				7676228E2C85F2190075B09E /* OfflinePageViewController.swift in Sources */,
 				146A28E52C9804BC00AF2C97 /* EditPostViewController.swift in Sources */,
 				766DD9FA2CA5E4FD001C100A /* AEDDataManager.swift in Sources */,
-				E2E4F0A22CA2C6D1004808CC /* SignUptableViewCell.swift in Sources */,
+				E2E4F0A22CA2C6D1004808CC /* SignUpTableViewCell.swift in Sources */,
 				1426761F2C99C629004C56D5 /* GuidelinePDFViewController.swift in Sources */,
 				E2E4F0A42CA6AB1E004808CC /* MuteViewController.swift in Sources */,
 				7622D0742C7C21BE00B1AEB2 /* OfflineMapModel.swift in Sources */,
@@ -976,7 +1007,6 @@
 				E2334CF92C947300003D9612 /* NoticeModel.swift in Sources */,
 				766DDA292CA88E60001C100A /* OfflineCivilDefenseShelterViewController.swift in Sources */,
 				76EFE8B12C8B5E5B0077D75B /* BoardViewController.swift in Sources */,
-				D60A81652C9CF49F00589AD3 /* AedDataManager.swift in Sources */,
 				E2E4F09E2C9B26D4004808CC /* ChangePasswordViewController.swift in Sources */,
 				766DDA1E2CA80B8A001C100A /* UIImage+Resize.swift in Sources */,
 				7622D0782C7C21D100B1AEB2 /* GuidelineModel.swift in Sources */,
@@ -1041,12 +1071,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		763C0A322C7B125C006BC4E7 /* Debug */ = {
+		763C0A322C7B125C006BC4E7 /* Debug (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7676228B2C85E6710075B09E /* Secrets.xcconfig */;
+			baseConfigurationReference = C9D590D92E3B4E28005FFF7F /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1099,18 +1130,282 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug (Development)";
 		};
-		763C0A332C7B125C006BC4E7 /* Release */ = {
+		763C0A332C7B125C006BC4E7 /* Release (Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7676228B2C85E6710075B09E /* Secrets.xcconfig */;
+			baseConfigurationReference = C9D590D92E3B4E28005FFF7F /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Development)";
+		};
+		763C0A352C7B125C006BC4E7 /* Debug (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D590D92E3B4E28005FFF7F /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Duriso/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "재난정보 제보시 카메라로 직접 촬영하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "재난정보 제보시 사진보관함에 저장된 사진을 첨부하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Development_Debug_Duriso;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug (Development)";
+		};
+		763C0A362C7B125C006BC4E7 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D590D92E3B4E28005FFF7F /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Duriso/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "재난정보 제보시 카메라로 직접 촬영하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "재난정보 제보시 사진보관함에 저장된 사진을 첨부하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Development_Product_Duriso;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release (Development)";
+		};
+		C9D590DA2E3B4F17005FFF7F /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7676228B2C85E6710075B09E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Production)";
+		};
+		C9D590DB2E3B4F17005FFF7F /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7676228B2C85E6710075B09E /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Duriso/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "재난정보 제보시 카메라로 직접 촬영하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "재난정보 제보시 사진보관함에 저장된 사진을 첨부하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Debug_Duriso;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug (Production)";
+		};
+		C9D590DC2E3B4F4D005FFF7F /* Release (Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7676228B2C85E6710075B09E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1156,55 +1451,18 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
-		763C0A352C7B125C006BC4E7 /* Debug */ = {
+		C9D590DD2E3B4F4D005FFF7F /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7676228B2C85E6710075B09E /* Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Duriso/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "두리소";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.donghyeon.Duriso;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev_Duriso;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		763C0A362C7B125C006BC4E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Duriso/Duriso.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1213,10 +1471,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4LTNHNC3S6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Duriso/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "두리소";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "재난정보 제보시 카메라로 직접 촬영하여 게시글을 작성하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "재난정보 제보시 사진보관함에 저장된 사진을 첨부하여 게시글을 작성하기 위해 필요한 권한입니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1227,18 +1490,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.donghyeon.Duriso;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = adhoc_Duriso;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Product_Duriso;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1246,20 +1509,24 @@
 		763C0A1B2C7B125B006BC4E7 /* Build configuration list for PBXProject "Duriso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				763C0A322C7B125C006BC4E7 /* Debug */,
-				763C0A332C7B125C006BC4E7 /* Release */,
+				763C0A322C7B125C006BC4E7 /* Debug (Development) */,
+				C9D590DA2E3B4F17005FFF7F /* Debug (Production) */,
+				763C0A332C7B125C006BC4E7 /* Release (Development) */,
+				C9D590DC2E3B4F4D005FFF7F /* Release (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Development)";
 		};
 		763C0A342C7B125C006BC4E7 /* Build configuration list for PBXNativeTarget "Duriso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				763C0A352C7B125C006BC4E7 /* Debug */,
-				763C0A362C7B125C006BC4E7 /* Release */,
+				763C0A352C7B125C006BC4E7 /* Debug (Development) */,
+				C9D590DB2E3B4F17005FFF7F /* Debug (Production) */,
+				763C0A362C7B125C006BC4E7 /* Release (Development) */,
+				C9D590DD2E3B4F4D005FFF7F /* Release (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Development)";
 		};
 /* End XCConfigurationList section */
 
@@ -1344,6 +1611,14 @@
 				minimumVersion = 7.1.1;
 			};
 		};
+		C9D562922E549412009A3A18 /* XCRemoteSwiftPackageReference "IQKeyboardToolbarManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardToolbarManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1426,6 +1701,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 76EFE8BB2C8F3CBB0077D75B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		C9D562932E549412009A3A18 /* IQKeyboardToolbarManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9D562922E549412009A3A18 /* XCRemoteSwiftPackageReference "IQKeyboardToolbarManager" */;
+			productName = IQKeyboardToolbarManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 

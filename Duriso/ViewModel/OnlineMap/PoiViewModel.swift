@@ -30,7 +30,7 @@ class PoiViewModel {
   private let disposeBag = DisposeBag()
   
   let shelterNetworkManager = ShelterNetworkManager()
-  let aedDataManager = AedDataManager()
+  let aedNetworkManager = AedNetworkManager()
   
   let shelterPois = PublishSubject<[Shelter]>()
   let aedPois = PublishSubject<[Aed]>()
@@ -62,18 +62,12 @@ class PoiViewModel {
   
   // MARK: - AED Data Fetching
   private func fetchAedData(boundingBox: (startLat: Double, endLat: Double, startLot: Double, endLot: Double)) {
-    if let aedResponse = aedDataManager.loadAeds() {
-      let filteredAeds = filterAedsInBoundingBox(aeds: aedResponse.body, boundingBox: boundingBox)
-      self.aedPois.onNext(filteredAeds)
-    } else {
-      aedDataManager.fetchAllAeds()
-        .subscribe(onNext: { [weak self] response in
-          let filteredAeds = self?.filterAedsInBoundingBox(aeds: response.body, boundingBox: boundingBox)
-          self?.aedPois.onNext(filteredAeds ?? [])
-        }, onError: { error in
-          print("Error fetching AEDs: \(error)")
-        }).disposed(by: disposeBag)
-    }
+    aedNetworkManager.fetchAeds(boundingBox: boundingBox)
+      .subscribe(onNext: { aedResponse in
+        self.aedPois.onNext(aedResponse.body)
+      }, onError: { error in
+        print("Error fetching AEDs: \(error)")
+      }).disposed(by: disposeBag)
   }
   
   // MARK: - Emergency Report Data Fetching

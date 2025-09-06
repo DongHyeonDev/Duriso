@@ -143,7 +143,8 @@ class LoginViewController: UIViewController {
     let isAutoLogin = UserDefaults.standard.bool(forKey: "autoLogin")
     checkboxButton.isSelected = isAutoLogin
     
-    if isAutoLogin {
+    // 자동 로그인 상태에서 현재 사용자가 로그인되어 있는지 확인
+    if isAutoLogin, let user = Auth.auth().currentUser {
       let mainTabBarViewModel = MainTabBarViewModel()
       let mainTabBarVC = MainTabBarViewController(viewModel: mainTabBarViewModel)
       self.navigationController?.setViewControllers([mainTabBarVC], animated: false)
@@ -248,11 +249,6 @@ class LoginViewController: UIViewController {
       .bind(to: viewModel.password)
       .disposed(by: disposeBag)
     
-    // 이메일 로그인 버튼 탭 이벤트를 ViewModel의 loginTap에 바인딩
-    idLoginButton.rx.tap
-      .bind(to: viewModel.loginTap)
-      .disposed(by: disposeBag)
-    
     // 체크박스 버튼 탭 이벤트 처리
     checkboxButton.rx.tap
       .subscribe(onNext: { [weak self] in
@@ -262,15 +258,23 @@ class LoginViewController: UIViewController {
       })
       .disposed(by: disposeBag)
     
-    // 뷰가 로드될 때 저장된 자동 로그인 상태 복원
-    let isAutoLogin = UserDefaults.standard.bool(forKey: "autoLogin")
-    checkboxButton.isSelected = isAutoLogin
+    // 로그인 버튼 탭 이벤트 처리
+    idLoginButton.rx.tap
+      .subscribe(onNext: { [weak self] in
+        self?.viewModel.loginTap.onNext(())
+      })
+      .disposed(by: disposeBag)
     
-    // 로그인 성공/실패에 대한 처리
+    // 로그인 성공 이벤트 처리
     viewModel.loginSuccess
       .subscribe(onNext: { [weak self] in
-        guard let self = self else { return }
-        self.handleLoginSuccess()
+        // 로그인 성공 시에만 자동 로그인 상태 저장
+        if self?.checkboxButton.isSelected == true {
+          UserDefaults.standard.set(true, forKey: "autoLogin")
+        }
+        let mainTabBarViewModel = MainTabBarViewModel()
+        let mainTabBarVC = MainTabBarViewController(viewModel: mainTabBarViewModel)
+        self?.navigationController?.setViewControllers([mainTabBarVC], animated: true)
       })
       .disposed(by: disposeBag)
     

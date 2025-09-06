@@ -33,7 +33,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   public var dong: String = ""
   
   // UI 요소
-  let addressView = UIStackView().then {
+  private let addressView = UIStackView().then {
     $0.backgroundColor = .CWhite
     $0.axis = .horizontal
     $0.distribution = .fill
@@ -45,7 +45,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     $0.layer.masksToBounds = false
   }
   
-  let addressLabel = UILabel().then {
+  private let addressLabel = UILabel().then {
     $0.backgroundColor = .CWhite
     $0.text = "위치 확인 중..."
     $0.textColor = .CBlack
@@ -55,26 +55,53 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   }
   
   let addressRefreshButton = UIButton().then {
-    $0.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
+    $0.setImage(UIImage(systemName: "arrow.clockwise", withConfiguration: UIImage.SymbolConfiguration(pointSize: 16, weight: .semibold)), for: .normal)
     $0.tintColor = .CBlack
-    $0.addTarget(self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
   }
   
-  let buttonStackView = UIStackView().then {
+  let poiButtonStackView = UIStackView().then {
     $0.alignment = .center
     $0.distribution = .fillEqually
     $0.axis = .horizontal
     $0.spacing = 8
   }
   
-  lazy var currentLocationButton = UIButton().then {
+  let rightButtonStackView = UIStackView().then {
+    $0.alignment = .center
+    $0.distribution = .fillEqually
+    $0.axis = .vertical
+    $0.spacing = 8
+  }
+  
+  let currentLocationButton = UIButton().then {
     $0.setImage(UIImage(named: "locationButton"), for: .normal)
     $0.imageView?.contentMode = .scaleAspectFit
+//    $0.setImage(UIImage(systemName: "location", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .semibold)), for: .normal)
+//    $0.setImage(UIImage(systemName: "location.fill"), for: .selected)
+//    $0.backgroundColor = .CWhite
+//    $0.tintColor = .CBlue
+//    $0.layer.borderWidth = 1
+//    $0.layer.cornerRadius = 5
+    $0.layer.shadowColor = UIColor.black.cgColor
+    $0.layer.shadowOffset = CGSize(width: 0, height: 4)
+    $0.layer.shadowRadius = 4
+    $0.layer.shadowOpacity = 0.2
+    $0.layer.masksToBounds = false
     $0.addTarget(self, action: #selector(didTapCurrentLocationButton), for: .touchUpInside)
   }
   
-  let writingButton = UIButton().then {
+  private let writingButton = UIButton().then {
     $0.setImage(UIImage(named: "writingButton"), for: .normal)
+//    $0.setImage(UIImage(systemName: "square.and.pencil", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .semibold)), for: .normal)
+//    $0.backgroundColor = .CWhite
+//    $0.tintColor = .CBlue
+//    $0.layer.borderWidth = 1
+//    $0.layer.cornerRadius = 5
+    $0.layer.shadowColor = UIColor.black.cgColor
+    $0.layer.shadowOffset = CGSize(width: 0, height: 4)
+    $0.layer.shadowRadius = 4
+    $0.layer.shadowOpacity = 0.2
+    $0.layer.masksToBounds = false
     $0.addTarget(self, action: #selector(didTapWritingButton), for: .touchUpInside)
   }
   
@@ -103,6 +130,7 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.navigationBar.isHidden = true
     view.backgroundColor = .white
     setupViews()  // 뷰 설정
     setupConstraints()  // 제약 조건 설정
@@ -111,8 +139,13 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     
     // 위치 업데이트 콜백 설정
     LocationManager.shared.onLocationUpdate = { [weak self] latitude, longitude in
-      self?.updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+//      self?.updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+      self?.autoUpdateAddressLabel()
     }
+    
+    addressRefreshButton.addTarget(self, action: #selector(didTapAddressRefreshButton), for: .touchUpInside)
+    currentLocationButton.addTarget(self, action: #selector(didTapCurrentLocationButton), for: .touchUpInside)
+    writingButton.addTarget(self, action: #selector(didTapWritingButton), for: .touchUpInside)
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -123,23 +156,39 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   // MARK: - View Setup
   
   func setupViews() {
-    addChild(onlineMapViewController)
-    view.addSubview(onlineMapViewController.view)
-    view.addSubview(offlineMapViewController.view)
+    [
+      onlineMapViewController,
+      offlineMapViewController
+    ].forEach { self.addChild($0) }
+    
+    [
+      onlineMapViewController.view,
+      offlineMapViewController.view
+    ].forEach { self.view.addSubview($0) }
+    
+//    view.addSubview(onlineMapViewController.view)
+//    view.addSubview(offlineMapViewController.view)
     onlineMapViewController.didMove(toParent: self)
     offlineMapViewController.view.isHidden = true
+    
     [
       addressView,
-      currentLocationButton,
-      buttonStackView,
-      writingButton
+      rightButtonStackView,
+      poiButtonStackView,
+//      currentLocationButton,
+//      writingButton
     ].forEach { view.addSubview($0) }
+    
+    [
+      currentLocationButton,
+      writingButton
+    ].forEach { rightButtonStackView.addArrangedSubview($0) }
     
     [
       shelterButton,
       aedButton,
       emergencyReportButton
-    ].forEach { buttonStackView.addArrangedSubview($0) }
+    ].forEach { poiButtonStackView.addArrangedSubview($0) }
     
     [
       addressLabel,
@@ -153,10 +202,14 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     onlineMapViewController.view.snp.makeConstraints {
       $0.edges.equalToSuperview()
     }
+    // 오프라인 맵도 화면 전체에 맞게 제약 추가
+    offlineMapViewController.view.snp.makeConstraints {
+      $0.edges.equalToSuperview()
+    }
     
     addressView.snp.makeConstraints {
       $0.centerX.equalToSuperview()
-      $0.top.equalTo(view.safeAreaLayoutGuide).offset(-16)
+      $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)/*.offset(-16)*/
       $0.width.equalTo(280)
       $0.height.equalTo(40)
     }
@@ -170,25 +223,30 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
     addressRefreshButton.snp.makeConstraints {
       $0.centerY.equalTo(addressView)
       $0.trailing.equalTo(addressView).offset(-10)
-      $0.width.height.equalTo(16)
+      $0.width.height.equalTo(20)
+    }
+    
+    rightButtonStackView.snp.makeConstraints {
+      $0.trailing.equalToSuperview().inset(16)
+      $0.bottom.equalTo(poiButtonStackView.snp.top).offset(-16)
     }
     
     currentLocationButton.snp.makeConstraints {
-      $0.trailing.equalToSuperview().offset(-16)
-      $0.bottom.equalTo(writingButton.snp.top).offset(-8)
+//      $0.trailing.equalToSuperview().offset(-16)
+//      $0.bottom.equalTo(writingButton.snp.top).offset(-16)
       $0.width.height.equalTo(40)
     }
     
     writingButton.snp.makeConstraints {
-      $0.trailing.equalToSuperview().offset(-16)
-      $0.bottom.equalTo(buttonStackView.snp.top).offset(-16)
+//      $0.trailing.equalToSuperview().offset(-16)
+//      $0.bottom.equalTo(poiButtonStackView.snp.top).offset(-16)
       $0.width.height.equalTo(40)
     }
     
-    buttonStackView.snp.makeConstraints {
+    poiButtonStackView.snp.makeConstraints {
       $0.centerX.equalToSuperview()
       $0.leading.trailing.equalToSuperview().inset(16)
-      $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(13)
+      $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
     }
     
     shelterButton.snp.makeConstraints {
@@ -252,7 +310,35 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
   
   // MARK: - Location and Address Handling
   
-  func updatePlaceNameLabel(latitude: Double, longitude: Double) {
+//  func updatePlaceNameLabel(latitude: Double, longitude: Double) {
+//    let regionFetcher = RegionFetcher()
+//    regionFetcher.fetchRegion(longitude: longitude, latitude: latitude) { [weak self] documents, error in
+//      guard let self = self else { return }
+//      if let document = documents?.first {
+//        self.si = document.region1DepthName
+//        self.gu = document.region2DepthName
+//        self.dong = document.region3DepthName
+//        DispatchQueue.main.async {
+//          let region = "\(self.si) \(self.gu) \(self.dong)"
+//          self.addressLabel.text = region
+//          print("Your Location is: \(region)")
+//        }
+//      }
+//      if let error = error {
+//        print("Error fetching region: \(error)")
+//      }
+//    }
+//  }
+//  
+  func autoUpdateAddressLabel() {
+    guard let mapView = onlineMapViewController.mapController?.getView("mapview") as? KakaoMap else {
+      print("Error: Failed to get mapView")
+      return
+    }
+    let viewCenter = CGPoint(x: onlineMapViewController.view.bounds.midX, y: onlineMapViewController.view.bounds.midY)
+    let centerMapPoint = mapView.getPosition(viewCenter)
+    let latitude = centerMapPoint.wgsCoord.latitude
+    let longitude = centerMapPoint.wgsCoord.longitude
     let regionFetcher = RegionFetcher()
     regionFetcher.fetchRegion(longitude: longitude, latitude: latitude) { [weak self] documents, error in
       guard let self = self else { return }
@@ -278,11 +364,14 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       print("Error: Failed to get mapView")
       return
     }
-    let centerMapPoint = mapView.getPosition(CGPoint(x: 0.5, y: 0.5))
+    let viewCenter = CGPoint(x: onlineMapViewController.view.bounds.midX, y: onlineMapViewController.view.bounds.midY)
+    let centerMapPoint = mapView.getPosition(viewCenter)
     let latitude = centerMapPoint.wgsCoord.latitude
     let longitude = centerMapPoint.wgsCoord.longitude
     poiViewModel.fetchDataForLocation(latitude: latitude, longitude: longitude)
-    updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+//    updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+    autoUpdateAddressLabel()
+    LocationManager.shared.stopUpdatingLocation()
     print("Latitude: \(latitude), Longitude: \(longitude)")
   }
   
@@ -294,7 +383,8 @@ class OnlineViewController: UIViewController, PoiViewModelDelegate {
       onlineMapViewController.updateCurrentLocation(latitude: latitude, longitude: longitude)
       onlineMapViewController.moveCameraToCurrentLocation(latitude: latitude, longitude: longitude)
       poiViewModel.fetchDataForLocation(latitude: latitude, longitude: longitude)
-      updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+//      updatePlaceNameLabel(latitude: latitude, longitude: longitude)
+      autoUpdateAddressLabel()
     } else {
       LocationManager.shared.startUpdatingLocation()
     }

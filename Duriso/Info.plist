@@ -2,37 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleName</key>
+	<string>$(APP_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(APP_BUNDLE_ID)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>ko</string>
 	</array>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.</string>
-	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
-	<dict>
-		<key>MLNAccuracyAuthorizationDescription</key>
-		<string>사용자의 현재 위치를 기반으로 대피소 및 AED 정보를 제공하고 제보하기 위해 필요한 권한입니다.</string>
-	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>재난정보 제보시 카메라로 직접 촬영하여 게시글을 작성하기 위해 필요한 권한입니다.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>재난정보 제보시 사진보관함에 저장된 사진을 첨부하여 게시글을 작성하기 위해 필요한 권한입니다.</string>
 	<key>AED_API_KEY</key>
 	<string>$(AED_API_KEY)</string>
+	<key>DISASTER_API_KEY</key>
+	<string>$(DISASTER_API_KEY)</string>
 	<key>KAKAO_DEV_API_KEY</key>
 	<string>$(KAKAO_DEV_API_KEY)</string>
 	<key>KAKAO_MAP_API_KEY</key>
 	<string>$(KAKAO_MAP_API_KEY)</string>
-	<key>DISASTER_API_KEY</key>
-	<string>$(DISASTER_API_KEY)</string>
-	<key>SHELTER_API_KEY</key>
-	<string>$(SHELTER_API_KEY)</string>
 	<key>MAPTILER_API_KEY</key>
 	<string>$(MAPTILER_API_KEY)</string>
+	<key>SHELTER_API_KEY</key>
+	<string>$(SHELTER_API_KEY)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NotoSansKR-Regular.ttf</string>
